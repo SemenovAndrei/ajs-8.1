@@ -1,11 +1,11 @@
-/* eslint-disable no-console */
-// TODO: write your code here
-import Bowman from './characters/bowman';
+import Team from './team';
+import charactersList from './characters/characterslist';
 
-// eslint-disable-next-line no-console
-console.log('worked');
+const team = new Team();
 
-const result = new Bowman('Alex');
-result.damage(50);
-result.levelUp();
-console.log(result);
+console.log(team);
+
+team.addAll(charactersList);
+
+console.log(team);
+console.log(team.toArray());
